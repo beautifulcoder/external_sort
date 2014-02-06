@@ -9,7 +9,7 @@ module FIO
       end
     end
     def [](index)
-      return -1 if @indexes[index] >= @indexes.length
+      return nil if @indexes[index] >= @indexes.length
       @indexes[index] += 1
       @files[index].read(4).unpack('L').first
     end

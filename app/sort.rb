@@ -38,8 +38,8 @@ class Sort
     def min_index(arr)
       index = 0
       (1..arr.length - 1).each do |i|
-        next if arr[i] == -1
-        index = i if arr[index] == -1 || arr[index] > arr[i]
+        next if arr[i].nil?
+        index = i if arr[index].nil? || arr[index] > arr[i]
       end
       index
     end

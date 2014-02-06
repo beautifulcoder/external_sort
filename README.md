@@ -2,6 +2,12 @@
 
 A fresh look at tackling an external sort problem by using some pretty radical techniques.
 
+## Installing dependencies
+
+Run:
+
+    bundle install
+
 ## Running tests
 
 To run the tests simply do:
